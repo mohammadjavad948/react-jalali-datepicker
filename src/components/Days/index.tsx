@@ -61,6 +61,7 @@ export class Days extends React.PureComponent<IDaysProps> {
       changeHour,
       changeMinute,
       isDatePicker,
+      changeMonth
     } = this.props;
     if (!days.length) {
       return null;
@@ -75,6 +76,7 @@ export class Days extends React.PureComponent<IDaysProps> {
             ArrowLeft={ArrowLeft}
             ArrowRight={ArrowRight}
             increaseMonth={increaseMonth}
+            changeMonth={changeMonth}
             decreaseMonth={decreaseMonth}
             hour={hour}
             minute={minute}

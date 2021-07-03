@@ -15,6 +15,7 @@ export interface IDaysProps {
   DateIcon?: React.ReactType;
   monthName: string;
   increaseMonth: () => void;
+  changeMonth? : (month: number) => void;
   decreaseMonth: () => void;
   isSelecting?: boolean;
   holiday?: number[];

@@ -6,6 +6,7 @@ export interface IDaysHeadProps {
   monthName: string;
   datePickerStatus: string;
   increaseMonth?: () => void;
+  changeMonth?: (month: number) => void;
   decreaseMonth?: () => void;
   hour?: number;
   minute?: number;

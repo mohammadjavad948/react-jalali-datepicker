@@ -13,6 +13,7 @@ export const DaysHead: React.FunctionComponent<IDaysHeadProps> = ({
   timePickerView,
   hour,
   minute,
+  changeMonth
 }) => {
   if (timePickerView) {
     return (

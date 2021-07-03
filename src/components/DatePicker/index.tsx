@@ -199,6 +199,7 @@ export class DatePicker extends React.PureComponent<
             ClockIcon={ClockIcon}
             increaseMonth={() => this.changeMonth(1)}
             decreaseMonth={() => this.changeMonth(-1)}
+            changeMonth={this.changeMonth}
             toggleView={this.toggleTimePickerView}
             timePickerView={this.state.timePickerView}
             hour={this.state.hour}
