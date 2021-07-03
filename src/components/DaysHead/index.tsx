@@ -27,6 +27,11 @@ export const DaysHead: React.FunctionComponent<IDaysHeadProps> = ({
   }
   return (
     <DaysHeadContainer data-testid="days-head">
+      <HeadTitle>
+        <ArrowRight onClick={() => changeMonth(-12)} />
+        <p data-testid="days-head-title-text">سال</p>
+        <ArrowLeft onClick={() => changeMonth(12)} />
+      </HeadTitle>
       <HeadTitle data-testid="days-head-title">
         <ArrowRight onClick={decreaseMonth} />
         <p data-testid="days-head-title-text">{monthName}</p>
